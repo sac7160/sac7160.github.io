@@ -41,6 +41,26 @@ body {
     color: #333;
 }
 
+.email {
+    font-size: 16px;
+    margin-top: 20px;
+}
+
+.email .emoji {
+    font-size: 25px; /* 원하는 크기로 조정 */
+    margin-right: 2px;
+    vertical-align: middle;
+}
+
+.email a {
+    color: #2a7ae2;
+    text-decoration: none;
+}
+
+.email a:hover {
+    text-decoration: underline;
+}
+
 .intro-links {
     margin-top: 20px;
 }
@@ -257,4 +277,17 @@ body {
 .highlight {
     color: #e74c3c; /* 진한 빨강 */
     font-weight: bold;
+}
+
+.footer {
+    width: 100%;
+    margin-top: 60px; /* 위 콘텐츠와의 간격 */
+    margin-bottom: 10px; /* 하단 브라우저 여백 (기존보다 작게) */
+}
+
+.footer-content {
+    text-align: center;
+    font-size: 12px;
+    color: #888;
+    font-family: "Inter", sans-serif;
 }
