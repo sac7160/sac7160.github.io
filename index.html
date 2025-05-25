@@ -13,139 +13,142 @@
 	<div class="container">
 		<aside class="sidebar">
 			<div>
-				<!DOCTYPE html>
-				<html lang="en">
-
-				<head>
-					<meta charset="UTF-8">
-					<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-					<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;500;700&display=swap"
-						rel="stylesheet">
-					<link rel="stylesheet" href="css/style.css">
-				</head>
 
 				<body>
-					<div class="container">
+					<div class="container" id="main-container">
 						<div class="intro">
-							<div class="intro-image">
-								<img src="images/profile.JPG" alt="Profile Image">
+							<div class="intro-image hover-effect" id="profile-hover"">
+								<img src=" images/profile.JPG" alt="Profile Image" id="profile-img">
 							</div>
-							<div class="intro-text">
-								<h1>Changhyeon Park</h1>
-								<p>
-									I am a MS student in the <a href="https://hcitech.org/index.html"
-										target="_blank">HCI Tech Lab</a> at <a href="https://www.kaist.ac.kr/en/"
-										target="_blank">KAIST</a> advised by <a href="https://sanghoy.com/"
-										target="_blank">Sang Ho Yoon</a>.
+							<div class="hide-on-hover">
+								<div class="intro-text">
+									<h1>Changhyeon Park</h1>
+									<p>
+										I am a MS student in the <a href="https://hcitech.org/index.html"
+											target="_blank">HCI Tech Lab</a> at <a href="https://www.kaist.ac.kr/en/"
+											target="_blank">KAIST</a> advised by <a href="https://sanghoy.com/"
+											target="_blank">Sang Ho Yoon</a>.
 
-									My research topic is Sensing & Haptic, and in particular, I want to develop
-									technologies that will
-									create immersive, natural, comfortable, and effective user experiences in various
-									ubiquitous computing
-									environments such as VR/AR, as well as on various mobile devices. Recently, I’ve
-									been interested in enabling high-level interactions such as pose estimation and
-									activity recognition by processing sensing data acquired from various sensors using
-									machine learning.
-								</p>
-								<p class="email">
-									<span class="emoji">📧</span> Email: <a
-										href="mailto:sac7160@kaist.ac.kr"><strong>sac7160 [at] kaist.ac.kr</strong></a>
-								</p>
-								<div class="intro-links">
-									<a href="docs/CV.pdf" target="_blank">📄 CV</a>
-									<a href="https://scholar.google.com/citations?user=G_eB7qAAAAAJ&hl=ko&oi=ao"
-										target="_blank">🎓 Google
-										Scholar</a>
-									<a href="www.linkedin.com/in/changhyeon-park-17a072338" target="_blank"
-										style="display: inline-flex; align-items: center; gap: 6px;">
-										<img src="images/linkedin.svg" alt="LinkedIn" height="18"
-											style="vertical-align: middle;">
-										LinkedIn
-									</a>
-									<a href="https://orcid.org/0009-0005-4624-5307" target="_blank"
-										style="display: inline-flex; align-items: center; gap: 6px;">
-										<img src="images/ORCID Logo.png" alt="LinkedIn" height="18"
-											style="vertical-align: middle;">
-										ORCID
-									</a>
+										My research topic is <b>Sensing & Haptics</b>, and in particular, I want to
+										develop
+										technologies that will
+										create immersive, natural, comfortable, and effective user experiences in
+										various
+										ubiquitous computing
+										environments such as VR/AR, as well as on various mobile devices. Recently, I’ve
+										been interested in enabling high-level interactions such as pose estimation and
+										activity recognition by processing sensing data acquired from various sensors
+										using
+										machine learning.
+									</p>
+									<p class="email">
+										<span class="emoji">📧</span> Email: <a
+											href="mailto:sac7160@kaist.ac.kr"><strong>sac7160 [at]
+												kaist.ac.kr</strong></a>
+									</p>
+									<div class="intro-links">
+										<a href="docs/CV.pdf" target="_blank">📄 CV</a>
+										<a href="https://scholar.google.com/citations?user=G_eB7qAAAAAJ&hl=ko&oi=ao"
+											target="_blank">🎓 Google
+											Scholar</a>
+										<a href="www.linkedin.com/in/changhyeon-park-17a072338" target="_blank"
+											style="display: inline-flex; align-items: center; gap: 6px;">
+											<img src="images/linkedin.svg" alt="LinkedIn" height="18"
+												style="vertical-align: middle;">
+											LinkedIn
+										</a>
+										<a href="https://orcid.org/0009-0005-4624-5307" target="_blank"
+											style="display: inline-flex; align-items: center; gap: 6px;">
+											<img src="images/ORCID Logo.png" alt="LinkedIn" height="18"
+												style="vertical-align: middle;">
+											ORCID
+										</a>
+									</div>
 								</div>
 							</div>
 						</div>
 
 						<section class="news">
-							<h2>News</h2>
-							<hr>
-							<ul>
-								<li><span class="news-date">May. 2025</span> 🎉 Webpage renewal!</li>
-								<li><span class="news-date">April. 2025</span> 📃 Paper accepted at IMWUT 2025</li>
+							<div class="hide-on-hover">
+								<h2>News</h2>
+								<hr>
+								<ul>
+									<li><span class="news-date">May. 2025</span> 🎉 Webpage renewal!</li>
+									<li><span class="news-date">April. 2025</span> 📃 Paper accepted at IMWUT 2025</li>
 
-							</ul>
-							<p class="last-updated">Last updated: May 03, 2025</p>
+								</ul>
+								<p class="last-updated">Last updated: May 03, 2025</p>
+							</div>
 						</section>
 
 
 						<section class="research-grid">
-							<h2>Publications</h2>
-							<hr>
+							<div class="hide-on-hover">
+								<h2>Publications</h2>
+								<hr>
 
-							<div class="paper-card">
-								<div class="paper-image">
-									<img src="images/imwut2025.png" alt="imwut2025 thumbnail">
-								</div>
-								<div class="paper-content">
-									<div class="paper-meta">ACM Ubicomp 2025 / IMWUT November, 2024</div>
-									<h3 class="paper-title">UltraBoard: Always-Available Wearable Ultrasonic Mid-air
-										Haptic
-										Interface for Responsive and Robust VR Inputs</h3>
-									<p class="paper-authors"><strong>Changhyeon Park</strong>, Yubin Lee, Sang Ho Yoon
-									</p>
-									<div class="paper-links">
-										<a href="docs/imwut2025.pdf" class="tag">📄 PDF</a>
-										<a href="#" class="tag">🔗 DOI</a>
-										<a href="#" class="tag">🎥 Video</a>
-										<a href="#" class="tag">💻 Code</a>
+								<div class="paper-card">
+									<div class="paper-image">
+										<img src="images/imwut2025.png" alt="imwut2025 thumbnail">
+									</div>
+									<div class="paper-content">
+										<div class="paper-meta">ACM Ubicomp 2025 / IMWUT November, 2024</div>
+										<h3 class="paper-title">UltraBoard: Always-Available Wearable Ultrasonic Mid-air
+											Haptic
+											Interface for Responsive and Robust VR Inputs</h3>
+										<p class="paper-authors"><strong>Changhyeon Park</strong>, Yubin Lee, Sang Ho
+											Yoon
+										</p>
+										<div class="paper-links">
+											<a href="docs/imwut2025.pdf" class="tag">📄 PDF</a>
+											<a href="#" class="tag">🔗 DOI</a>
+											<a href="#" class="tag">🎥 Video</a>
+											<a href="#" class="tag">💻 Code</a>
+										</div>
 									</div>
 								</div>
-							</div>
 
-							<div class="paper-card">
-								<div class="paper-image">
-									<img src="images/ieeeaccess2024.png" alt="ieeeaccess2024 thumbnail">
-								</div>
-								<div class="paper-content">
-									<div class="paper-meta">IEEE Access, 2024</div>
-									<h3 class="paper-title">Effect of Rendering Virtual Vibrotactile Motion on the
-										Perceived Lateral Force</h3>
-									<p class="paper-authors"><strong>Changhyeon Park</strong>, Seokmin Hong, Jaeyoung
-										Park
-									</p>
-									<div class="paper-links">
-										<a href="docs/ieeeaccess2024.pdf" class="tag">📄 PDF</a>
-										<a href="https://ieeexplore.ieee.org/document/10758625" class="tag">🔗 DOI</a>
+								<div class="paper-card">
+									<div class="paper-image">
+										<img src="images/ieeeaccess2024.png" alt="ieeeaccess2024 thumbnail">
+									</div>
+									<div class="paper-content">
+										<div class="paper-meta">IEEE Access, 2024</div>
+										<h3 class="paper-title">Effect of Rendering Virtual Vibrotactile Motion on the
+											Perceived Lateral Force</h3>
+										<p class="paper-authors"><strong>Changhyeon Park</strong>, Seokmin Hong,
+											Jaeyoung
+											Park
+										</p>
+										<div class="paper-links">
+											<a href="docs/ieeeaccess2024.pdf" class="tag">📄 PDF</a>
+											<a href="https://ieeexplore.ieee.org/document/10758625" class="tag">🔗
+												DOI</a>
+										</div>
 									</div>
 								</div>
-							</div>
 
-							<div class="paper-card">
-								<div class="paper-image">
-									<img src="images/KSII2023.png" alt="ieeeaccess2024 thumbnail">
-								</div>
-								<div class="paper-content">
-									<div class="paper-meta">Journal of Internet Computing and Services (KCI), 2023</div>
-									<h3 class="paper-title">Virtual Object Weight Information with Multi-modal Sensory
-										Feedback during Remote Manipulation</h3>
-									<p class="paper-authors"><strong>Changhyeon Park</strong>, Jaeyoung
-										Park
-									</p>
-									<div class="paper-links">
-										<a href="docs/KSII2023.pdf" class="tag">📄 PDF</a>
-										<a href="https://doi.org/10.7472/jksii.2024.25.1.9" class="tag">🔗 DOI</a>
+								<div class="paper-card">
+									<div class="paper-image">
+										<img src="images/KSII2023.png" alt="ieeeaccess2024 thumbnail">
+									</div>
+									<div class="paper-content">
+										<div class="paper-meta">Journal of Internet Computing and Services (KCI), 2023
+										</div>
+										<h3 class="paper-title">Virtual Object Weight Information with Multi-modal
+											Sensory
+											Feedback during Remote Manipulation</h3>
+										<p class="paper-authors"><strong>Changhyeon Park</strong>, Jaeyoung
+											Park
+										</p>
+										<div class="paper-links">
+											<a href="docs/KSII2023.pdf" class="tag">📄 PDF</a>
+											<a href="https://doi.org/10.7472/jksii.2024.25.1.9" class="tag">🔗 DOI</a>
+										</div>
 									</div>
 								</div>
-							</div>
 
-							<!--div class="paper-card"> award 받으면....이거로....
+								<!--div class="paper-card"> award 받으면....이거로....
 								<div class="paper-image">
 									<img src="images/ieeeaccess2024.jpeg" alt="ieeeaccess2024 thumbnail">
 								</div>
@@ -165,50 +168,67 @@
 									</div>
 								</div>
 							</div-->
+							</div>
 						</section>
 
 						<section class="education">
-							<h2>Education</h2>
-							<hr>
-							<ul>
-								<li><strong>M.S. in Graduate School of Culture Techonology</strong>,
-									KAIST (Daejeon, Korea), 2024 - Now</li>
-								<li><strong>B.S. in Computer Engineering</strong>, Hongik University (Seoul, Korea),
-									2018
-									– 2023.</li>
-							</ul>
+							<div class="hide-on-hover">
+								<h2>Education</h2>
+								<hr>
+								<ul>
+									<li><strong>M.S. in Graduate School of Culture Techonology</strong>,
+										KAIST (Daejeon, Korea), 2024 - Now</li>
+									<li><strong>B.S. in Computer Engineering</strong>, Hongik University (Seoul, Korea),
+										2018
+										– 2023.</li>
+								</ul>
+							</div>
 						</section>
 
 
 						<section class="services">
-							<h2>SERVICES</h2>
-							<hr>
-							<h3>Paper Reviews</h3>
+							<div class="hide-on-hover">
+								<h2>SERVICES</h2>
+								<hr>
+								<h3>Paper Reviews</h3>
 
-							<ul class="review-list">
-								<li><strong>CHI LBW</strong> 2024/25</li>
-								<li><strong>AHs</strong> 2025</li>
-							</ul>
+								<ul class="review-list">
+									<li><strong>CHI LBW</strong> 2024/25</li>
+									<li><strong>AHs</strong> 2025</li>
+								</ul>
+							</div>
 						</section>
 
 						<section class="teaching">
-							<h2>Teaching</h2>
-							<hr>
-							<ul class="teaching-list">
-								<li><strong>Spring 2025</strong> | GCT623 Interaction Sensing Principle& Application
-									(Teaching
-									Assistant)
-								</li>
-							</ul>
+							<div class="hide-on-hover">
+								<h2>Teaching</h2>
+								<hr>
+								<ul class="teaching-list">
+									<li><strong>Spring 2025</strong> | KAIST, GCT623 Interaction Sensing Principle &
+										Application
+										(Teaching
+										Assistant)
+									</li>
+								</ul>
+							</div>
 						</section>
 
 						<footer class="footer">
-							<div class="footer-content">
-								<p>COPYRIGHT@Changhyeon Park 2025</p>
+							<div class="hide-on-hover">
+								<div class="footer-content">
+									<p>COPYRIGHT@Changhyeon Park 2025</p>
+								</div>
 							</div>
 						</footer>
 
+						<script src="js/hoverEffect.js"></script>
 
+
+						<!-- 중앙에 띄울 새 이미지 컨테이너 -->
+						<!--div id="hover-central-image">
+							<img src="images/profile_hover.png" alt="Hover Profile">
+						</div>
+					-->
 				</body>
 
 				<!-- Default Statcounter code for personal website https://sac7160.github.io/
@@ -228,4 +248,4 @@
 				<!-- End of Statcounter Code -->
 
 
-				</html>
+</html>

@@ -25,7 +25,12 @@ body {
     height: 420px; /* 세로 고정 크기 */
     object-fit: cover; /* 프레임에 맞게 채움 (약간 crop 가능) */
     border-radius: 12px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    /*box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);*/
+
+    /* ✅ 추가: 이미지 전환 부드럽게 */
+    background-color: #fff;
+    transition: opacity 0.6s ease-in-out;
+    opacity: 1;
 }
 
 .intro-text h1 {
@@ -369,4 +374,109 @@ section h2 {
     margin-bottom: 12px;
     text-transform: capitalize;
     letter-spacing: 0.3px;
+}
+
+/*호버 이펙트*/
+/* 기존 스타일 유지 + 호버 시 body 전체 배경 변경 */
+body.bg-active {
+    background-color: #ffec85 !important;
+}
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #f5f4fc; /* 기본 연보라색 */
+    transition: background-color 0.6s ease-in-out; /* ← 부드러운 전환 */
+}
+
+.hide-on-hover {
+    transition: opacity 0.6s ease, visibility 0.6s ease;
+}
+
+body.bg-active .hide-on-hover {
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+    height: 0;
+    overflow: hidden;
+}
+
+#hover-central-image {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1000;
+
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 1s ease-in-out, transform 1s ease-in-out;
+}
+
+#hover-central-image img {
+    width: 400px;
+    height: auto;
+    max-width: 90vw;
+    max-height: 90vh;
+    border-radius: 20px;
+}
+
+/* 활성화 시 보이게 */
+body.bg-active #hover-central-image {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+@media (max-width: 768px) {
+    .intro {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .intro-image img {
+        width: 220px;
+        height: auto;
+    }
+
+    .intro-text h1 {
+        font-size: 32px;
+    }
+
+    .intro-text p {
+        font-size: 16px;
+        line-height: 1.6;
+        padding: 0 10px;
+    }
+
+    .intro-links a {
+        font-size: 18px;
+    }
+
+    .container {
+        padding: 20px 10px;
+    }
+
+    .paper-card {
+        flex-direction: column; /* 세로로 쌓기 */
+        align-items: center;
+        text-align: center;
+        height: auto; /* 고정 높이 제거 */
+    }
+
+    .paper-image img {
+        width: 100%;
+        height: auto;
+        max-width: 90vw;
+    }
+
+    .paper-content {
+        padding: 10px;
+    }
+
+    .paper-title {
+        font-size: 18px;
+        word-break: keep-all;
+    }
 }
